@@ -1,4 +1,26 @@
+/*
+ * Copyright (C) 2013 Marcin Kunert
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.tilegenerator;
+
+/**
+ * 
+ * @author Marcin Kunert
+ * 
+ */
 public class Main {
 
 	public static void main(String[] args) throws Exception {
@@ -26,31 +48,29 @@ public class Main {
 		 * 
 		 * gora 54.512674 lewo 18.511425 prawo 18.52183 dol 54.505486
 		 */
-//
-//		gora: 54.60076
-//		lewo 18.476852
-//		prawo: ,18.482834
-//		dol: 54.595514
-		
+		//
+		// gora: 54.60076
+		// lewo 18.476852
+		// prawo: ,18.482834
+		// dol: 54.595514
+
 		double topLat = 54.60076;
 		double leftLng = 18.476852;
 
 		double bottomLat = 54.595514;
 		double rightLng = 18.482834;
-		
-		
-//		gora 54.512674
-//		lewo 18.511425
-//		prawo 18.52183
-//		dol 54.505486
-		
-		
+
+		// gora 54.512674
+		// lewo 18.511425
+		// prawo 18.52183
+		// dol 54.505486
+
 		// witomski
-//		double leftTopLat = 54.512674;
-//		double leftTopLng = 18.511425;
-//
-//		double rightBottomLat = 54.505486;
-//		double rightBottomLng = 18.52183;
+		// double leftTopLat = 54.512674;
+		// double leftTopLng = 18.511425;
+		//
+		// double rightBottomLat = 54.505486;
+		// double rightBottomLng = 18.52183;
 
 		int zoom = 21;
 
