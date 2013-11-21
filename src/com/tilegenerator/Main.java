@@ -1,30 +1,10 @@
-/*
- * Copyright (C) 2013 Marcin Kunert
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.tilegenerator;
 
-/**
- * 
- * @author Marcin Kunert
- * 
- */
-
-
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionListener;
 
+import java.awt.event.ActionEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -38,10 +18,6 @@ import javax.swing.JTextField;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.JButton;
-
-import java.awt.Font;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 import com.tilegenerator.Generator;
 
@@ -62,14 +38,6 @@ public class Main extends JFrame implements ActionListener{
 	private final JLabel lbOut;
 	
 
-	/**
-	 * @wbp.nonvisual location=61,179
-	 */
-	
-
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -88,9 +56,6 @@ public class Main extends JFrame implements ActionListener{
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public Main() {
 		final JFrame frame = new JFrame();
 		setTitle("Map Tile Generator");
@@ -138,14 +103,14 @@ public class Main extends JFrame implements ActionListener{
 		spinner.setModel(new SpinnerNumberModel(16, 16, 22, 1));
 
 		
-		JLabel lAppro = new JLabel("Przybli¿enie");
+		JLabel lAppro = new JLabel("Przybliï¿½enie");
 		lAppro.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		
 		lbIn = new JLabel("C:\\Test");
 		lbOut = new JLabel("D:\\Test");
 		
 		
-		JButton bInput = new JButton("Podaj plik wejœciowy");
+		JButton bInput = new JButton("Podaj plik wejï¿½ciowy");
 		bInput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event)
 			{	     
@@ -157,7 +122,7 @@ public class Main extends JFrame implements ActionListener{
 		});
 		
 		
-		JButton bOutput = new JButton("Podaj folder wyjœciowy");
+		JButton bOutput = new JButton("Podaj folder wyjï¿½ciowy");
 		bOutput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event)
 			{
@@ -300,7 +265,7 @@ public class Main extends JFrame implements ActionListener{
 
 		
 
-		System.out.println("Zakoñczono.\nCzas trwania: " + (System.currentTimeMillis() - start) + "ms");
+		System.out.println("Zakoï¿½czono.\nCzas trwania: " + (System.currentTimeMillis() - start) + "ms");
 		}
         
         
