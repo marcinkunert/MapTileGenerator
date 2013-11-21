@@ -127,14 +127,14 @@ public class Main extends JFrame implements ActionListener{
 		spinner.setModel(new SpinnerNumberModel(16, 16, 22, 1));
 
 		
-		JLabel lAppro = new JLabel("Przybli�enie");
+		JLabel lAppro = new JLabel("Przybliżenie");
 		lAppro.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		
 		lbIn = new JLabel("C:\\Test");
 		lbOut = new JLabel("D:\\Test");
 		
 		
-		JButton bInput = new JButton("Podaj plik wej�ciowy");
+		JButton bInput = new JButton("Podaj plik wejściowy");
 		bInput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event)
 			{	     
@@ -146,7 +146,7 @@ public class Main extends JFrame implements ActionListener{
 		});
 		
 		
-		JButton bOutput = new JButton("Podaj folder wyj�ciowy");
+		JButton bOutput = new JButton("Podaj folder wyjściowy");
 		bOutput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event)
 			{
