@@ -85,7 +85,7 @@ public class Main extends JFrame implements ActionListener {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
-		JLabel lDown = new JLabel("D\u00F3\u0142:");
+		JLabel lDown = new JLabel("Bottom:");
 		lDown.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
 		tTop = new JTextField();
@@ -98,10 +98,10 @@ public class Main extends JFrame implements ActionListener {
 		tBot.setColumns(10);
 		tBot.addActionListener(this);
 
-		JLabel lLeft = new JLabel("Lewo:");
+		JLabel lLeft = new JLabel("Left:");
 		lLeft.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
-		JLabel lRight = new JLabel("Prawo:");
+		JLabel lRight = new JLabel("Right:");
 		lRight.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
 		tLeft = new JTextField();
@@ -113,19 +113,19 @@ public class Main extends JFrame implements ActionListener {
 		tRight.setText("0.00");
 		tRight.setColumns(10);
 
-		JLabel lTop = new JLabel("G\u00F3ra:");
+		JLabel lTop = new JLabel("Top:");
 		lTop.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
 		spinner = new JSpinner();
 		spinner.setModel(new SpinnerNumberModel(16, 16, 22, 1));
 
-		JLabel lAppro = new JLabel("Przybliżenie");
+		JLabel lAppro = new JLabel("Zoom");
 		lAppro.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
-		lbIn = new JLabel("C:\\Test");
-		lbOut = new JLabel("D:\\Test");
+		lbIn = new JLabel("");
+		lbOut = new JLabel("");
 
-		JButton bInput = new JButton("Podaj plik wejściowy");
+		JButton bInput = new JButton("Input file");
 		bInput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				JFileChooser j = new JFileChooser();
@@ -135,7 +135,7 @@ public class Main extends JFrame implements ActionListener {
 			}
 		});
 
-		JButton bOutput = new JButton("Podaj folder wyjściowy");
+		JButton bOutput = new JButton("Output folder");
 		bOutput.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				JFileChooser j = new JFileChooser();
@@ -146,7 +146,7 @@ public class Main extends JFrame implements ActionListener {
 			}
 		});
 
-		bDo = new JButton("Wykonaj");
+		bDo = new JButton("Execute");
 		bDo.addActionListener(this);
 
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
@@ -436,7 +436,7 @@ public class Main extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}
 
-			System.out.println("Zako�czono.\nCzas trwania: "
+			System.out.println("Finished.\nCzas trwania: "
 					+ (System.currentTimeMillis() - start) + "ms");
 		}
 
